@@ -1,0 +1,102 @@
+/**
+ * Form Inputs
+ * Input, textarea, select, and form controls
+ */
+
+@layer components {
+  /* Base input */
+  .input {
+    @apply w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all duration-200;
+  }
+
+  /* Size variants */
+  .input-sm {
+    @apply px-3 py-1.5 text-sm rounded-md;
+  }
+
+  .input-lg {
+    @apply px-5 py-3.5 text-lg rounded-xl;
+  }
+
+  /* State variants */
+  .input-error {
+    @apply border-danger-500 focus:border-danger-500 focus:ring-danger-500/20;
+  }
+
+  .input-success {
+    @apply border-success-500 focus:border-success-500 focus:ring-success-500/20;
+  }
+
+  .input-warning {
+    @apply border-warning-500 focus:border-warning-500 focus:ring-warning-500/20;
+  }
+
+  .input-disabled {
+    @apply bg-gray-100 text-gray-500 cursor-not-allowed;
+  }
+
+  /* Textarea */
+  .textarea {
+    @apply input resize-y min-h-[100px];
+  }
+
+  .textarea-no-resize {
+    @apply resize-none;
+  }
+
+  /* Select */
+  .select {
+    @apply input appearance-none bg-no-repeat bg-right pr-10;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center;
+    background-size: 1.25em 1.25em;
+  }
+
+  /* Checkbox & Radio base */
+  .checkbox,
+  .radio {
+    @apply h-4 w-4 rounded border-gray-300 text-primary-600 focus:ring-primary-500 focus:ring-2 focus:ring-offset-0;
+  }
+
+  .radio {
+    @apply rounded-full;
+  }
+
+  /* Switch/Toggle */
+  .switch {
+    @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200;
+  }
+
+  .switch-off {
+    @apply bg-gray-200;
+  }
+
+  .switch-on {
+    @apply bg-primary-600;
+  }
+
+  .switch-handle {
+    @apply inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 shadow-sm;
+  }
+
+  /* Input group */
+  .input-group {
+    @apply flex;
+  }
+
+  .input-group .input {
+    @apply rounded-none first:rounded-l-lg last:rounded-r-lg;
+  }
+
+  .input-addon {
+    @apply flex items-center px-3 border border-gray-300 bg-gray-50 text-gray-500 text-sm;
+  }
+
+  .input-addon-left {
+    @apply rounded-l-lg border-r-0;
+  }
+
+  .input-addon-right {
+    @apply rounded-r-lg border-l-0;
+  }
+}

@@ -1,0 +1,86 @@
+/**
+ * Cards
+ * Card layouts and variants
+ */
+
+@layer components {
+  /* Base card */
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden;
+  }
+
+  /* Card sections */
+  .card-header {
+    @apply px-6 py-4 border-b border-gray-100;
+  }
+
+  .card-body {
+    @apply p-6;
+  }
+
+  .card-footer {
+    @apply px-6 py-4 border-t border-gray-100 bg-gray-50/50;
+  }
+
+  /* Card variants */
+  .card-flat {
+    @apply shadow-none;
+  }
+
+  .card-elevated {
+    @apply shadow-md border-0;
+  }
+
+  .card-bordered {
+    @apply shadow-none border-2;
+  }
+
+  /* Card sizes */
+  .card-sm .card-header,
+  .card-sm .card-footer {
+    @apply px-4 py-3;
+  }
+
+  .card-sm .card-body {
+    @apply p-4;
+  }
+
+  .card-lg .card-header,
+  .card-lg .card-footer {
+    @apply px-8 py-5;
+  }
+
+  .card-lg .card-body {
+    @apply p-8;
+  }
+
+  /* Hover effects */
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  .card-clickable {
+    @apply cursor-pointer card-hover;
+  }
+
+  /* Status cards */
+  .card-primary {
+    @apply border-l-4 border-l-primary-500;
+  }
+
+  .card-success {
+    @apply border-l-4 border-l-success-500;
+  }
+
+  .card-warning {
+    @apply border-l-4 border-l-warning-500;
+  }
+
+  .card-danger {
+    @apply border-l-4 border-l-danger-500;
+  }
+
+  .card-info {
+    @apply border-l-4 border-l-info-500;
+  }
+}

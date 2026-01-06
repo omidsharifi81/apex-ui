@@ -1,0 +1,42 @@
+{
+  "name": "@apex-ui/components",
+  "version": "1.0.0",
+  "description": "Premium UI component library with Tailwind CSS - Modern, accessible, and customizable React components",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "components",
+    "styles",
+    "utils",
+    "tailwind.config.js",
+    "index.js",
+    "index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apex-ui/components.git"
+  },
+  "keywords": [
+    "apex-ui",
+    "react",
+    "components",
+    "tailwind",
+    "tailwindcss",
+    "ui",
+    "design-system",
+    "accessible",
+    "customizable",
+    "premium"
+  ],
+  "author": "Apex UI Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": "^3.4.0",
+    "react": "^18.0.0",
+    "lucide-react": "^0.303.0",
+    "clsx": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

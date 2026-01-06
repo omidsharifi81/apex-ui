@@ -1,0 +1,98 @@
+/**
+ * Buttons
+ * All button variants and states
+ */
+
+@layer components {
+  /* Base button */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Size variants */
+  .btn-xs {
+    @apply px-2 py-1 text-xs rounded;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm rounded-md;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-lg rounded-xl;
+  }
+
+  .btn-xl {
+    @apply px-8 py-4 text-xl rounded-xl;
+  }
+
+  /* Color variants */
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-100 text-gray-700 hover:bg-gray-200 focus:ring-gray-500;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-gray-300 bg-transparent hover:bg-gray-50 focus:ring-gray-500;
+  }
+
+  .btn-outline-primary {
+    @apply btn border-2 border-primary-500 text-primary-600 bg-transparent hover:bg-primary-50 focus:ring-primary-500;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-gray-600 hover:bg-gray-100 focus:ring-gray-500;
+  }
+
+  .btn-link {
+    @apply btn bg-transparent text-primary-600 hover:text-primary-700 hover:underline focus:ring-0 px-0;
+  }
+
+  /* Status variants */
+  .btn-danger {
+    @apply btn bg-danger-600 text-white hover:bg-danger-500 focus:ring-danger-500;
+  }
+
+  .btn-success {
+    @apply btn bg-success-600 text-white hover:bg-success-500 focus:ring-success-500;
+  }
+
+  .btn-warning {
+    @apply btn bg-warning-500 text-white hover:bg-warning-600 focus:ring-warning-500;
+  }
+
+  .btn-info {
+    @apply btn bg-info-600 text-white hover:bg-info-500 focus:ring-info-500;
+  }
+
+  /* Special states */
+  .btn-loading {
+    @apply relative pointer-events-none;
+  }
+
+  .btn-loading::after {
+    content: '';
+    @apply absolute inset-0 flex items-center justify-center;
+  }
+
+  /* Icon button */
+  .btn-icon {
+    @apply btn p-2 aspect-square;
+  }
+
+  .btn-icon-sm {
+    @apply btn p-1.5 aspect-square text-sm;
+  }
+
+  .btn-icon-lg {
+    @apply btn p-3 aspect-square text-lg;
+  }
+
+  /* Full width */
+  .btn-block {
+    @apply w-full;
+  }
+}

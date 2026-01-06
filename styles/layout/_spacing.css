@@ -1,0 +1,72 @@
+/**
+ * Spacing
+ * Margin and padding utilities
+ */
+
+@layer utilities {
+  /* Section spacing */
+  .section-gap {
+    @apply space-y-8 md:space-y-12;
+  }
+
+  /* Content spacing */
+  .content-gap {
+    @apply space-y-4 md:space-y-6;
+  }
+
+  /* Tight spacing */
+  .tight-gap {
+    @apply space-y-2;
+  }
+
+  /* No gap */
+  .no-gap {
+    @apply space-y-0 gap-0;
+  }
+
+  /* Responsive padding */
+  .p-responsive {
+    @apply p-4 md:p-6 lg:p-8;
+  }
+
+  .px-responsive {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  .py-responsive {
+    @apply py-4 md:py-6 lg:py-8;
+  }
+
+  /* Responsive margin */
+  .m-responsive {
+    @apply m-4 md:m-6 lg:m-8;
+  }
+
+  .mx-responsive {
+    @apply mx-4 md:mx-6 lg:mx-8;
+  }
+
+  .my-responsive {
+    @apply my-4 md:my-6 lg:my-8;
+  }
+
+  /* Safe area padding (for mobile) */
+  .safe-area-inset {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Negative margins */
+  .-m-card {
+    @apply -m-4 md:-m-6;
+  }
+
+  .-mx-card {
+    @apply -mx-4 md:-mx-6;
+  }
+
+  .-my-card {
+    @apply -my-4 md:-my-6;
+  }
+}

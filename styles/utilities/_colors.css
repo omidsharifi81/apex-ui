@@ -1,0 +1,123 @@
+/**
+ * Colors
+ * Text and background color utilities
+ */
+
+@layer utilities {
+  /* Text colors - semantic */
+  .text-primary {
+    @apply text-primary-600;
+  }
+
+  .text-success {
+    @apply text-success-600;
+  }
+
+  .text-warning {
+    @apply text-warning-600;
+  }
+
+  .text-danger {
+    @apply text-danger-600;
+  }
+
+  .text-info {
+    @apply text-info-600;
+  }
+
+  .text-muted {
+    @apply text-gray-500;
+  }
+
+  .text-subtle {
+    @apply text-gray-400;
+  }
+
+  /* Background colors - semantic */
+  .bg-primary {
+    @apply bg-primary-600;
+  }
+
+  .bg-success {
+    @apply bg-success-600;
+  }
+
+  .bg-warning {
+    @apply bg-warning-500;
+  }
+
+  .bg-danger {
+    @apply bg-danger-600;
+  }
+
+  .bg-info {
+    @apply bg-info-600;
+  }
+
+  /* Soft backgrounds */
+  .bg-primary-soft {
+    @apply bg-primary-50;
+  }
+
+  .bg-success-soft {
+    @apply bg-success-50;
+  }
+
+  .bg-warning-soft {
+    @apply bg-warning-50;
+  }
+
+  .bg-danger-soft {
+    @apply bg-danger-50;
+  }
+
+  .bg-info-soft {
+    @apply bg-info-50;
+  }
+
+  /* Surface colors */
+  .bg-surface {
+    @apply bg-white;
+  }
+
+  .bg-surface-raised {
+    @apply bg-white shadow-sm;
+  }
+
+  .bg-surface-sunken {
+    @apply bg-gray-50;
+  }
+
+  .bg-surface-overlay {
+    @apply bg-white shadow-lg;
+  }
+
+  /* Border colors - semantic */
+  .border-primary {
+    @apply border-primary-500;
+  }
+
+  .border-success {
+    @apply border-success-500;
+  }
+
+  .border-warning {
+    @apply border-warning-500;
+  }
+
+  .border-danger {
+    @apply border-danger-500;
+  }
+
+  .border-info {
+    @apply border-info-500;
+  }
+
+  .border-subtle {
+    @apply border-gray-100;
+  }
+
+  .border-muted {
+    @apply border-gray-200;
+  }
+}

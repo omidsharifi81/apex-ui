@@ -1,0 +1,110 @@
+/**
+ * Grid
+ * Grid system and flex utilities
+ */
+
+@layer components {
+  /* Basic grid */
+  .grid-cols-auto {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4;
+  }
+
+  /* Card grid */
+  .card-grid {
+    @apply grid gap-4 sm:gap-6;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .card-grid-sm {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .card-grid-lg {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  /* Masonry-like grid */
+  .masonry-grid {
+    @apply columns-1 sm:columns-2 lg:columns-3 gap-4;
+  }
+
+  .masonry-grid > * {
+    @apply break-inside-avoid mb-4;
+  }
+
+  /* Flex utilities */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-start {
+    @apply flex items-center justify-start;
+  }
+
+  .flex-end {
+    @apply flex items-center justify-end;
+  }
+
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  /* Stack (vertical spacing) */
+  .stack {
+    @apply flex flex-col;
+  }
+
+  .stack-xs {
+    @apply gap-1;
+  }
+
+  .stack-sm {
+    @apply gap-2;
+  }
+
+  .stack-md {
+    @apply gap-4;
+  }
+
+  .stack-lg {
+    @apply gap-6;
+  }
+
+  .stack-xl {
+    @apply gap-8;
+  }
+
+  /* Inline (horizontal spacing) */
+  .inline {
+    @apply flex flex-row flex-wrap;
+  }
+
+  .inline-xs {
+    @apply gap-1;
+  }
+
+  .inline-sm {
+    @apply gap-2;
+  }
+
+  .inline-md {
+    @apply gap-4;
+  }
+
+  .inline-lg {
+    @apply gap-6;
+  }
+
+  /* Divider */
+  .divider {
+    @apply border-t border-gray-200 my-4;
+  }
+
+  .divider-vertical {
+    @apply border-l border-gray-200 mx-4 h-auto self-stretch;
+  }
+}

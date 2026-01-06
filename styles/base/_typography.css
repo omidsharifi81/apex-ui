@@ -1,0 +1,76 @@
+/**
+ * Typography
+ * Font sizes, weights, and text utilities
+ */
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-gray-900;
+  }
+
+  h1 {
+    @apply text-3xl leading-tight;
+  }
+
+  h2 {
+    @apply text-2xl leading-tight;
+  }
+
+  h3 {
+    @apply text-xl leading-snug;
+  }
+
+  h4 {
+    @apply text-lg leading-snug;
+  }
+
+  h5 {
+    @apply text-base leading-normal;
+  }
+
+  h6 {
+    @apply text-sm leading-normal;
+  }
+
+  p {
+    @apply text-gray-600 leading-relaxed;
+  }
+
+  small {
+    @apply text-sm text-gray-500;
+  }
+
+  strong {
+    @apply font-semibold;
+  }
+
+  code {
+    @apply font-mono text-sm bg-gray-100 px-1.5 py-0.5 rounded;
+  }
+
+  pre {
+    @apply font-mono text-sm bg-gray-100 p-4 rounded-lg overflow-x-auto;
+  }
+}
+
+@layer components {
+  .text-title {
+    @apply text-xl font-semibold text-gray-900;
+  }
+
+  .text-subtitle {
+    @apply text-lg font-medium text-gray-700;
+  }
+
+  .text-body {
+    @apply text-base text-gray-600;
+  }
+
+  .text-caption {
+    @apply text-sm text-gray-500;
+  }
+
+  .text-overline {
+    @apply text-xs font-medium uppercase tracking-wider text-gray-500;
+  }
+}

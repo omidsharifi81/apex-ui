@@ -1,0 +1,89 @@
+/**
+ * Alerts
+ * Alert messages and notifications
+ */
+
+@layer components {
+  /* Base alert */
+  .alert {
+    @apply flex items-start gap-3 p-4 rounded-lg border;
+  }
+
+  /* Alert icon */
+  .alert-icon {
+    @apply flex-shrink-0 w-5 h-5;
+  }
+
+  /* Alert content */
+  .alert-content {
+    @apply flex-1 min-w-0;
+  }
+
+  .alert-title {
+    @apply font-medium mb-1;
+  }
+
+  .alert-description {
+    @apply text-sm opacity-90;
+  }
+
+  /* Alert close button */
+  .alert-close {
+    @apply flex-shrink-0 p-1 rounded hover:bg-black/5 transition-colors;
+  }
+
+  /* Status variants */
+  .alert-info {
+    @apply bg-blue-50 border-blue-200 text-blue-800;
+  }
+
+  .alert-success {
+    @apply bg-green-50 border-green-200 text-green-800;
+  }
+
+  .alert-warning {
+    @apply bg-yellow-50 border-yellow-200 text-yellow-800;
+  }
+
+  .alert-danger {
+    @apply bg-red-50 border-red-200 text-red-800;
+  }
+
+  .alert-primary {
+    @apply bg-primary-50 border-primary-200 text-primary-800;
+  }
+
+  /* Soft variants (no border) */
+  .alert-soft-info {
+    @apply bg-blue-50 text-blue-800 border-transparent;
+  }
+
+  .alert-soft-success {
+    @apply bg-green-50 text-green-800 border-transparent;
+  }
+
+  .alert-soft-warning {
+    @apply bg-yellow-50 text-yellow-800 border-transparent;
+  }
+
+  .alert-soft-danger {
+    @apply bg-red-50 text-red-800 border-transparent;
+  }
+
+  /* Filled variants */
+  .alert-filled-info {
+    @apply bg-blue-600 text-white border-transparent;
+  }
+
+  .alert-filled-success {
+    @apply bg-green-600 text-white border-transparent;
+  }
+
+  .alert-filled-warning {
+    @apply bg-yellow-500 text-white border-transparent;
+  }
+
+  .alert-filled-danger {
+    @apply bg-red-600 text-white border-transparent;
+  }
+}

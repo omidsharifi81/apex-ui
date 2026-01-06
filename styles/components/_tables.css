@@ -1,0 +1,78 @@
+/**
+ * Tables
+ * Table styles and variants
+ */
+
+@layer components {
+  /* Base table */
+  .table {
+    @apply w-full text-left border-collapse;
+  }
+
+  .table th {
+    @apply px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50 border-b border-gray-200;
+  }
+
+  .table td {
+    @apply px-4 py-3 text-sm text-gray-700 border-b border-gray-100;
+  }
+
+  .table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  /* Hover effect */
+  .table-hover tbody tr {
+    @apply transition-colors;
+  }
+
+  .table-hover tbody tr:hover {
+    @apply bg-gray-50;
+  }
+
+  /* Striped */
+  .table-striped tbody tr:nth-child(even) {
+    @apply bg-gray-50/50;
+  }
+
+  /* Bordered */
+  .table-bordered {
+    @apply border border-gray-200;
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    @apply border border-gray-200;
+  }
+
+  /* Compact */
+  .table-compact th,
+  .table-compact td {
+    @apply px-3 py-2;
+  }
+
+  /* Responsive wrapper */
+  .table-responsive {
+    @apply overflow-x-auto -mx-4 px-4;
+  }
+
+  /* Sticky header */
+  .table-sticky thead {
+    @apply sticky top-0 z-10;
+  }
+
+  /* Selected row */
+  .table tbody tr.selected {
+    @apply bg-primary-50;
+  }
+
+  /* Empty state */
+  .table-empty {
+    @apply text-center py-12 text-gray-500;
+  }
+
+  /* Loading state */
+  .table-loading {
+    @apply opacity-50 pointer-events-none;
+  }
+}

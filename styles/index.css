@@ -1,0 +1,50 @@
+/**
+ * @trustquad/shared-ui
+ * Shared UI Styles - Main Entry Point
+ * 
+ * This file imports all categorized styles in the correct order.
+ */
+
+/* ============================================
+   1. BASE STYLES
+   Reset, typography, and global defaults
+   ============================================ */
+@import './base/_reset.css';
+@import './base/_typography.css';
+@import './base/_scrollbar.css';
+
+/* ============================================
+   2. LAYOUT
+   Container, grid, and spacing utilities
+   ============================================ */
+@import './layout/_container.css';
+@import './layout/_grid.css';
+@import './layout/_spacing.css';
+
+/* ============================================
+   3. COMPONENTS
+   Reusable UI components
+   ============================================ */
+@import './components/_buttons.css';
+@import './components/_inputs.css';
+@import './components/_cards.css';
+@import './components/_badges.css';
+@import './components/_alerts.css';
+@import './components/_modals.css';
+@import './components/_tables.css';
+@import './components/_forms.css';
+
+/* ============================================
+   4. UTILITIES
+   Helper classes and overrides
+   ============================================ */
+@import './utilities/_colors.css';
+@import './utilities/_animations.css';
+@import './utilities/_responsive.css';
+
+/* ============================================
+   5. TAILWIND DIRECTIVES
+   ============================================ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

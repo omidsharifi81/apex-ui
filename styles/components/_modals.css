@@ -1,0 +1,84 @@
+/**
+ * Modals
+ * Modal dialogs and overlays
+ */
+
+@layer components {
+  /* Modal overlay */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4;
+  }
+
+  /* Modal container */
+  .modal {
+    @apply bg-white rounded-xl shadow-xl max-h-[90vh] overflow-hidden flex flex-col;
+  }
+
+  /* Size variants */
+  .modal-sm {
+    @apply w-full max-w-sm;
+  }
+
+  .modal-md {
+    @apply w-full max-w-md;
+  }
+
+  .modal-lg {
+    @apply w-full max-w-lg;
+  }
+
+  .modal-xl {
+    @apply w-full max-w-xl;
+  }
+
+  .modal-2xl {
+    @apply w-full max-w-2xl;
+  }
+
+  .modal-full {
+    @apply w-full max-w-[95vw] max-h-[95vh];
+  }
+
+  /* Modal sections */
+  .modal-header {
+    @apply flex items-center justify-between px-6 py-4 border-b border-gray-100;
+  }
+
+  .modal-title {
+    @apply text-lg font-semibold text-gray-900;
+  }
+
+  .modal-close {
+    @apply p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors;
+  }
+
+  .modal-body {
+    @apply p-6 overflow-y-auto flex-1;
+  }
+
+  .modal-footer {
+    @apply flex items-center justify-end gap-3 px-6 py-4 border-t border-gray-100 bg-gray-50/50;
+  }
+
+  /* Animation classes */
+  .modal-enter {
+    @apply animate-fade-in;
+  }
+
+  .modal-content-enter {
+    @apply animate-bounce-in;
+  }
+
+  /* Drawer variant (side panel) */
+  .drawer-overlay {
+    @apply modal-overlay justify-end p-0;
+  }
+
+  .drawer {
+    @apply bg-white h-full max-w-md w-full shadow-xl flex flex-col;
+  }
+
+  .drawer-left {
+    @apply justify-start;
+  }
+}

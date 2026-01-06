@@ -1,0 +1,100 @@
+/**
+ * Responsive
+ * Responsive visibility and display utilities
+ */
+
+@layer utilities {
+  /* Show/Hide at breakpoints */
+  .show-mobile {
+    @apply block md:hidden;
+  }
+
+  .hide-mobile {
+    @apply hidden md:block;
+  }
+
+  .show-tablet {
+    @apply hidden md:block lg:hidden;
+  }
+
+  .show-desktop {
+    @apply hidden lg:block;
+  }
+
+  .hide-desktop {
+    @apply block lg:hidden;
+  }
+
+  /* Print visibility */
+  .print-only {
+    @apply hidden print:block;
+  }
+
+  .no-print {
+    @apply print:hidden;
+  }
+
+  /* Screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .not-sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* Focus visible only */
+  .focus-visible-only {
+    @apply opacity-0 focus-visible:opacity-100;
+  }
+
+  /* Truncate text */
+  .truncate-1 {
+    @apply line-clamp-1;
+  }
+
+  .truncate-2 {
+    @apply line-clamp-2;
+  }
+
+  .truncate-3 {
+    @apply line-clamp-3;
+  }
+
+  /* Aspect ratios */
+  .aspect-card {
+    aspect-ratio: 16 / 10;
+  }
+
+  .aspect-thumbnail {
+    aspect-ratio: 4 / 3;
+  }
+
+  .aspect-portrait {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Touch target size (for mobile accessibility) */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .touch-target-sm {
+    @apply min-h-[36px] min-w-[36px];
+  }
+}
