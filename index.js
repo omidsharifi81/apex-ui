@@ -4,6 +4,7 @@ export { Checkbox } from './components/Checkbox.jsx';
 export { CheckboxButton } from './components/CheckboxButton.jsx';
 export { SettingToggle } from './components/SettingToggle.jsx';
 export { default as SelectableCard } from './components/SelectableCard.jsx';
+export { Loading } from './components/Loading.jsx';
 export { 
   Card, 
   CardHeader, 

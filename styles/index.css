@@ -33,6 +33,7 @@
 @import './components/_modals.css';
 @import './components/_tables.css';
 @import './components/_forms.css';
+@import './components/_loading.css';
 
 /* ============================================
    4. UTILITIES

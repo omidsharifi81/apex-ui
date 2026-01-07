@@ -65,6 +65,30 @@ module.exports = {
           800: '#1e40af',
           900: '#1e3a8a',
         },
+        crypto: {
+          50: '#fef9f3',
+          100: '#fef3e8',
+          200: '#fde4c8',
+          300: '#fcd5a8',
+          400: '#f9b668',
+          500: '#f7931a', // Bitcoin Orange
+          600: '#e08315',
+          700: '#b96b11',
+          800: '#92530e',
+          900: '#6b3e0a',
+        },
+        store: {
+          50: '#eff6fb',
+          100: '#e6f0f8',
+          200: '#c2dbee',
+          300: '#9ec7e4',
+          400: '#579ed0',
+          500: '#0d579b', // Store Blue
+          600: '#0b4d8a',
+          700: '#093e6f',
+          800: '#073054',
+          900: '#05233f',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
