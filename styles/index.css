@@ -12,6 +12,7 @@
 @import './base/_reset.css';
 @import './base/_typography.css';
 @import './base/_scrollbar.css';
+@import './base/_rtl.css';
 
 /* ============================================
    2. LAYOUT

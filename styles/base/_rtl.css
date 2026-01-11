@@ -1,0 +1,83 @@
+/**
+ * RTL (Right-to-Left) Support
+ * Styles for right-to-left languages like Persian (Farsi), Arabic, Hebrew
+ */
+
+@layer base {
+  /* RTL base direction */
+  [dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+  }
+
+  /* LTR base direction (explicit) */
+  [dir="ltr"] {
+    direction: ltr;
+    text-align: left;
+  }
+
+  /* Form inputs should follow document direction */
+  [dir="rtl"] input,
+  [dir="rtl"] textarea,
+  [dir="rtl"] select {
+    text-align: right;
+  }
+
+  /* Table cells should follow document direction */
+  [dir="rtl"] th,
+  [dir="rtl"] td {
+    text-align: right;
+  }
+
+  /* Lists with proper padding */
+  [dir="rtl"] ul,
+  [dir="rtl"] ol {
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 0;
+  }
+
+  /* Numbers and code should remain LTR in RTL context */
+  [dir="rtl"] .ltr-content,
+  [dir="rtl"] code,
+  [dir="rtl"] .font-mono,
+  [dir="rtl"] input[type="number"],
+  [dir="rtl"] input[type="tel"],
+  [dir="rtl"] input[type="email"] {
+    direction: ltr;
+    text-align: left;
+  }
+
+  /* Keep numbers in tables LTR */
+  [dir="rtl"] td.numeric,
+  [dir="rtl"] .currency,
+  [dir="rtl"] .amount {
+    direction: ltr;
+    text-align: right;
+  }
+}
+
+/* RTL utilities for Tailwind */
+@layer utilities {
+  /* Flip transform for icons like arrows and chevrons */
+  .rtl\:flip {
+    transform: scaleX(-1);
+  }
+
+  [dir="rtl"] .rtl\:flip {
+    transform: scaleX(-1);
+  }
+
+  /* Explicit text direction */
+  .rtl\:text-right {
+    text-align: right;
+  }
+
+  .rtl\:text-left {
+    text-align: left;
+  }
+
+  /* Space reverse for RTL gap */
+  [dir="rtl"] .rtl\:space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+}
