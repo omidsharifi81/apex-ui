@@ -23,5 +23,16 @@ export interface CheckboxProps {
   labelClassName?: string;
 }
 
+export interface ToggleProps {
+  checked: boolean;
+  onChange: (value: boolean) => void;
+  disabled?: boolean;
+  loading?: boolean;
+  size?: 'sm' | 'md';
+  color?: string;
+  className?: string;
+}
+
 export const ConfirmationModal: React.FC<ConfirmationModalProps>;
 export const Checkbox: React.FC<CheckboxProps>;
+export const Toggle: React.FC<ToggleProps>;
