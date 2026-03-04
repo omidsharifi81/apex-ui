@@ -3,13 +3,13 @@
 ## Import
 
 ```jsx
-import { Loading } from '@trustquad/shared-ui';
+import { Loading } from '@nexlin/shared-ui';
 ```
 
-## Basic Usage (TrustQuad)
+## Basic Usage (Nexlin)
 
 ```jsx
-import { Loading } from '@trustquad/shared-ui';
+import { Loading } from '@nexlin/shared-ui';
 import logo from './assets/logo.png';
 
 // Simple loading
@@ -51,11 +51,11 @@ import logo from './assets/logo.png';
 
 ## Real-World Examples
 
-### TrustQuad - Payment Processing
+### Nexlin - Payment Processing
 
 ```jsx
-import { Loading } from '@trustquad/shared-ui';
-import TrustQuadLogo from '../assets/trustquad-logo.png';
+import { Loading } from '@nexlin/shared-ui';
+import NexlinLogo from '../assets/nexlin-logo.png';
 
 function PaymentPage() {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -63,7 +63,7 @@ function PaymentPage() {
   if (isProcessing) {
     return (
       <Loading 
-        logo={TrustQuadLogo} 
+        logo={NexlinLogo} 
         text="Processing your payment..." 
         fullScreen
         animation="pulse"
@@ -78,7 +78,7 @@ function PaymentPage() {
 ### KYC - Document Verification
 
 ```jsx
-import { Loading } from '@trustquad/shared-ui';
+import { Loading } from '@nexlin/shared-ui';
 import KYCLogo from '../assets/kyc-logo.png';
 
 function VerificationPage() {
@@ -103,7 +103,7 @@ function VerificationPage() {
 ### Inline Loading (Card Content)
 
 ```jsx
-import { Card, Loading } from '@trustquad/shared-ui';
+import { Card, Loading } from '@nexlin/shared-ui';
 import logo from '../assets/logo.png';
 
 function DashboardCard() {
